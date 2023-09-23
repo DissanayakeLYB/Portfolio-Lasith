@@ -73,3 +73,9 @@ a{
     color: aliceblue;
     text-decoration: none;
 }
+
+footer{
+    margin:0;
+    padding:0;
+    background-color: aliceblue;
+}
