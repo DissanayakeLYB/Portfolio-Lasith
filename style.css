@@ -8,30 +8,48 @@ body{
     padding: 0;
     width: 100vw;
     height:100vh;
-    background-color: black;
+    background-color: rgb(66, 33, 33);
 }
 
 section{
     display:flex;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 100vw;
+    height:100vh;
 }
 
 img{
-    padding: 2.5em;
+    padding: 2em;
+    padding-top: 0;
+    margin-left:1em;
     display:flex; 
     border-radius: 100em;
-    width: 22em;
-    height: 30em;
+    width: 30em;
+    height: 40em;
 }
 
 h1{
-    margin:1em;
+    margin-left:2em;
     color: aliceblue;
     display: flex;
     width:30vw;
+    height:70vh;
     align-items: center;
-    /* justify-content: center; */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5em;
+    padding-left:1em;
 }
+
+#designation p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, serif;
+    color: aliceblue;
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding:0;
+    justify-content: center;
+    text-align: center;
+}
+
