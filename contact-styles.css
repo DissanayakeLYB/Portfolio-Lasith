@@ -2,7 +2,7 @@ html {
     border: 0;
     margin: 0;
     animation-name: start;
-    animation-duration: 2s; 
+    animation-duration: 1s; 
   }
   
   @keyframes start {
@@ -49,21 +49,86 @@ a{
 
 
 #section-container{
-    padding: 3em;
-    padding-top:6em;
+    padding: 22em;
+    padding-top:10em;
+    position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap:5em;
+    width: 50em;
 }
 
-#about-section-1 {
+#contact-section-1 {
     display: flex;
     background-color: rgba(247, 247, 247, 0.2); 
-    min-width: 50em;
-    min-height: 35em;
+    min-width: 40em;
+    min-height: 25em;
     border-radius: 2em;
     transition-duration: 0.5s;
   }
+
+#div-name{
+  margin: 1em;
+  padding: 1em;  
+}
+
+label {
+  color:#f4f4f4;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#inputName {
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 1em;
+  outline: none;
+}
+
+#inputName::placeholder {
+  color: rgb(181, 180, 180,0.8);
+}
+
+#div-email{
+  margin: 1em;
+  padding: 1em;  
+}
+
+#inputEmail {
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 1em;
+  outline: none;
+}
+
+#inputEmail::placeholder {
+  color: rgb(181, 180, 180,0.8);
+}
+
+#div-feedback{
+  margin: 1em;
+  padding: 1em;  
+}
+
+#inputFeedback {
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  height: 1em;
+  outline: none;
+}
+
+#inputFeedback::placeholder {
+  color: rgb(181, 180, 180,0.8);
+}
+
