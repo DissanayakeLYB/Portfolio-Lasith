@@ -56,3 +56,20 @@ h1{
     padding-top: 0;
 }
 
+#nav-bar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform:uppercase;
+    list-style: none;
+    display:flex;
+    position:fixed;
+    flex-wrap:wrap;
+    gap:5em;
+    margin-top:2em;
+    right:3em;
+}
+
+a{
+    text-align: right;
+    color: aliceblue;
+    text-decoration: none;
+}
