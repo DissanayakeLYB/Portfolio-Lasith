@@ -16,13 +16,17 @@ html {
     }
   }
   
-
 body{
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height:100vh;
-    background-color: rgb(66, 33, 33);
+}
+
+#background{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height:100vh;
+  background-color: rgb(66, 33, 33);
 }
 
 section{
@@ -37,13 +41,13 @@ img{
     border-radius: 30em;
     width: 23em;
     height: 24em;
-    margin-top: 27vh;
+    margin-top: 22vh;
     margin-left:3vw;
 }
 
 #designation{
     padding: 5em;
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-left:4vw;
     color: aliceblue;
     display: flex;
@@ -55,6 +59,7 @@ img{
 
 h1{
     display: flex;
+    text-wrap:wrap;
     font-size: 5em;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -62,10 +67,10 @@ h1{
 
 #designation p{
     display:flex;
-    flex-wrap:wrap;
+    text-wrap:wrap;
     font-size: 1em;
     text-transform:uppercase;
-    margin-top:1.5vh;
+    margin-top:0;
     margin-left:0.2vw;
     padding-top: 0;
 }
@@ -77,9 +82,9 @@ h1{
     display:flex;
     position:fixed;
     flex-wrap:wrap;
-    gap:5em;
-    margin-top:2em;
-    right:3em;
+    gap:5vw;
+    margin-top:4vh;
+    right:3vw;
 }
 
 a{
@@ -94,7 +99,13 @@ a{
 }
 
 footer{
+    display: block;
+    position: fixed;
     margin:0;
     padding:0;
-    background-color: aliceblue;
+    background-color: rgba(207, 195, 195, 0.1);
+    width:100vw;
+    height:10vh;
+    bottom:0;
 }
+

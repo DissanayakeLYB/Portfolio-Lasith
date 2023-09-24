@@ -23,16 +23,17 @@ html {
     height:100vh;
     background-color: rgb(66, 33, 33);
 }
+
 #nav-bar{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform:uppercase;
-    list-style: none;
-    display:flex;
-    position:fixed;
-    flex-wrap:wrap;
-    gap:5em;
-    margin-top:2em;
-    right:3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform:uppercase;
+  list-style: none;
+  display:flex;
+  position:fixed;
+  flex-wrap:wrap;
+  gap:5vw;
+  margin-top:4vh;
+  right:3vw;
 }
 
 a{
