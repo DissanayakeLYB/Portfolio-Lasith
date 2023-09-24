@@ -83,6 +83,6 @@ a{
 }
 
 #about{
-    text-decoration: solid 1px underline white;
-    text-underline-offset: 4px;
+  text-decoration: solid 0.2vh underline white;
+  text-underline-offset: 0.5vh;
 }
