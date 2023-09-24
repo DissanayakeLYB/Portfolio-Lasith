@@ -16,12 +16,17 @@ html {
     }
   }
 
-  body{
+body{
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height:100vh;
-    background-color: rgb(66, 33, 33);
+}
+
+#background{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height:100vh;
+  background-color: rgb(66, 33, 33);
 }
 
 form{
@@ -61,7 +66,7 @@ a{
 
 #section-container{
     padding-left: 2em;
-    padding-top:10em;
+    padding-top:20vh;
     position:flex;
     display: flex;
     flex-wrap: wrap;
