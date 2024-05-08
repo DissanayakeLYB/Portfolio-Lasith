@@ -4,25 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lasith Dissanayake</title>
+    <title>Lasith Dissanayake</title>    
+    <link rel="icon" type="image/jpeg" href="Images/L.jpeg">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="hero">
+    <div class="hero" id="hero">
       <nav id="desktop-nav">
-        <div class="logo">Lasith D.</div>
+        <div class="logo"><a href="#">Lasith D.</a></div>
         <div>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
       <nav id="hamburger-nav">
-        <div class="logo">Lasith D.</div>
+        <div class="logo"><a href="#">Lasith D.</a></div>
         <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
@@ -37,6 +39,7 @@
           </div>
         </div>
       </nav>
+
       <section id="profile">
         <div class="section__pic-container">
           <img src="./Images/Lasith_4.png" alt="Lasith's profile picture" />
@@ -44,7 +47,7 @@
         <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
           <h1 class="title">Lasith Dissanayake</h1>
-          <p class="section__text__p2">Frontend Developer</p>
+          <p class="section__text__p2">Materials Science Engineer</p>
           <div class="btn-container">
             <button
               class="btn btn-color-2"
@@ -56,53 +59,31 @@
               Contact Info
             </button>
           </div>
-          <div id="socials-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="location.href='www.linkedin.com/in/lasith-dissanayake'"
-            />
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-              onclick="location.href='github.com/DissanayakeLYB'"
-            />
-          </div>
         </div>
       </section>
     </div>
+
     <section id="about">
+      <a href="#hero" class="icon up-arrow"><p>⬆️</p></i></a> 
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="section__pic-container_next">
           <img
-            src="./Images/Lasith_1.png"
+            src="./Images/lasith-7.jpg"
             alt="Profile picture"
             class="about-pic"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+            <div class="details-container">              
+              <h3> <i class="fa fa-history"></i> Experience</h3>
+              <p>6 months Intern<br/>Michelin Lanka (Pvt) Ltd. CPD<br/>Materials Science Engineer</p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <h3><i class="fa fa-book"></i> Education</h3>
+              <p>B.Sc. Eng. Materials Science and Engineering</p>
             </div>
           </div>
           <div class="text-container">
@@ -117,151 +98,100 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <a href="#skills" class="icon down-arrow"><p>⬇️</p></i></a>      
     </section>
-    <section id="experience">
+
+    <section id="skills">
+      <a href="#about" class="icon up-arrow"><p>⬆️</p></i></a>  
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="skills-sub-title">Lean Six Sigma (Certified)</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <h3>White Belt</h3>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
                 <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <h3>Yellow Belt</h3>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <h3>Green Belt</h3>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
                 <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <h3>Black Belt</h3>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="skills-sub-title">Lean Management</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Lean Specialist</h3>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Lean Expert</h3>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <h3>VSM</h3>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
                 <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <h3>JIT</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Lean Management</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Lean Specialist</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Lean Expert</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>VSM</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JIT</h3>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <a href="#projects" class="icon down-arrow"><p>⬇️</p></a>
     </section>
+
     <section id="projects">
+      <a href="#skills" class="icon up-arrow"><p>⬆️</p></i></a>  
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
@@ -271,7 +201,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="skills-sub-title project-title">Project One</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -295,7 +225,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="skills-sub-title project-title">Project Two</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -319,7 +249,7 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="skills-sub-title project-title">Project Three</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -337,32 +267,25 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <a href="#contact" class="icon down-arrow"><p>⬇️</p></a>
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <i class="fa fa-github"></i>
+          <p><a href="https://github.com/DissanayakeLYB" target="_blank">DissnayakeLYB</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:examplemail@gmail.com">lasithdissanayake.official@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa fa-linkedin"></i>
+          <p><a href="https://www.linkedin.com" target="_blank">Lasith Dissnayake</a></p>
+        </div>
         </div>
       </div>
     </section>
@@ -371,9 +294,8 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
