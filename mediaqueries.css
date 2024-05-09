@@ -1,7 +1,7 @@
 @ -1,103 +0,0 @@
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 83vh;
+      height: 100vh;
       margin-bottom: 6rem;
     }
     .about-containers {
@@ -14,11 +14,25 @@
   }
   
   @media screen and (max-width: 1200px) {
+
+    #profile {
+      height: 70vh;
+      margin-bottom: 6rem;
+    }
+    .section__pic-container img{
+      border-radius:100%;
+      width:190px;
+      height:200px;
+      margin: 0px auto 0px auto ;
+    }
+    #profile .section__text{
+      margin-top:-50px;
+    }
     #desktop-nav {
-      display: none;
+      display: flex;
     }
     #hamburger-nav {
-      display: flex;
+      display: none;
     }
     #experience,
     .experience-details-container {
@@ -41,22 +55,64 @@
     .section__pic-container {
       width: 275px;
       height: 275px;
-      margin: 0 auto 2rem;
+      margin: 0 auto;
     }
     .about-containers {
       margin-top: 0;
+    }
+    .up-arrow {
+      position: absolute;
+      right: 9rem;
+      top: 2.5rem;
+      font-size:x-large;
+      visibility: hidden;
+    }
+    .down-arrow {
+      position: absolute;
+      right: 9rem;
+      top: 2.5rem;
+      font-size:x-large;
+      visibility: hidden;
+    }
+
+    #about{
+      height:100vh;
+    }
+
+    #about h1{
+      margin-bottom:50px;
+    }
+
+    .section__pic-container_next {
+      height: 30vh;
+      width: 100vw;
+      margin: auto 0;
+    }
+    
+    .about-pic {
+      border-radius: 2rem;
+      height: 70vh;
+      width: 20vw;
     }
   }
   
   @media screen and (max-width: 600px) {
     #contact,
     footer {
-      height: 40vh;
+      height: 30vh;
     }
     #profile {
-      height: 83vh;
+      height: 80vh;
       margin-bottom: 0;
     }
+    #profile .section__text{
+      margin-top:70px;
+    }
+
+    #profile .section__pic-container img{
+      margin-top:0px;
+    }
+
     article {
       font-size: 1rem;
     }
@@ -101,4 +157,20 @@
     .text-container {
       text-align: justify;
     }
+    .up-arrow {
+      position: absolute;
+      right: 2rem;
+      top: 2.5rem;
+      font-size:x-large;
+      visibility: hidden;
+    }
+    .down-arrow {
+      position: absolute;
+      right: 2rem;
+      top: 2.5rem;
+      font-size:x-large;
+      visibility: hidden;
+    }
+
+    
   }
