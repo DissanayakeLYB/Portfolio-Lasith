@@ -2,31 +2,35 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-@keyframes changeBackgroundColor {
-  0% { background-color: #b1dffe; }
-  20% { background-color: #a7f6c8; }
-  40% { background-color: #e5e6a0; } 
-  60% { background-color: #e5e6a0; } 
-  80% { background-color: #a7f6c8; } 
-  100% { background-color: #b1dffe; } 
-}
+
 
 * {
   margin: 0;
-  padding: 0;
-  animation: changeBackgroundColor 20s infinite;
+  padding: 0;  
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  /* background-image: url("background-images/background-02.jpg"); */
+  /* background-size:cover; */
+  background: linear-gradient(to bottom, #52a3ffe0, #003e5a);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h3 i {
+  color: rgb(155, 233, 251);
+}
+
+.lasith{
+  color: rgb(0, 205, 251);
+  text-shadow: 1px 1px 3px black;
+}
+
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
 }
 
 /* TRANSITION */
@@ -51,7 +55,7 @@ nav {
 
 nav .logo a{
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .nav-links {
@@ -61,16 +65,13 @@ nav .logo a{
 }
 
 a {
-  color: rgb(80, 80, 80);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  text-decoration-color: rgb(0, 0, 0);
 }
 
 a:hover {
-  color: rgb(0, 0, 0);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-color: rgb(0, 0, 0);
+  color: rgb(0, 205, 251);
+  text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
 
 .logo {
@@ -123,7 +124,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -206,15 +207,17 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .section__text__p2 {
+  letter-spacing: 1px;
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -223,6 +226,10 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+}
+
+.text-container{
+  text-align: justify;
 }
 
 /* ICONS */
@@ -237,7 +244,8 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: 5vh;
 }
 
 .btn {
@@ -261,6 +269,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   color: rgb(0, 0, 0);
   box-shadow: 3px 3px black;
+  background-color: rgb(255, 255, 255, 0.6);
 }
 
 .btn-color-1:hover,
@@ -295,6 +304,7 @@ section {
 .about-details-container {
   display: flex;
 }
+
 
 .section__pic-container_next {
   display: flex;
@@ -332,7 +342,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background-color: rgb(163, 244, 244);
+  /* background-color: rgb(163, 244, 244); */
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -358,7 +368,7 @@ section {
 }
 
 .skills-sub-title {
-  color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -403,7 +413,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background-color: rgb(163, 244, 244);
+  /* background-color: rgb(163, 244, 244); */
 }
 
 .project-img {
@@ -414,11 +424,11 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: rgb(242, 242, 242);
 }
 
 .project-btn {
-  color: black;
+  color: rgb(0, 0, 0);
   border-color: rgb(163, 163, 163);
 }
 
@@ -437,7 +447,7 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background-color: rgb(163, 244, 244);
+  /* background-color: rgb(163, 244, 244); */
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -452,6 +462,11 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
+}
+
+.contact-info-container p a:hover {
+  text-shadow: 1px 1px 0px rgba(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .contact-icon {
@@ -485,7 +500,8 @@ footer p {
   position: absolute;
   top: 40px;
   font-size: small;
-  background-color: #f9f9f9;
+  background-color: #f9f9f93c;  
+  color: rgb(255, 255, 255);
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
@@ -498,13 +514,20 @@ footer p {
   display: None;
   font-size: small;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f9f9f93c;
+  color: rgb(255, 255, 255);
   border: 1px solid #ccc;  
   bottom: 40px;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+
+i{
+  color: bisque;
+}
+
+
 
 .popup_up_1{
   right: -13px;    
@@ -566,4 +589,8 @@ footer p {
 }
 .down-arrow-3:hover{
   scale:1.3;
+}
+
+.project_code{
+  font-size: medium;
 }
