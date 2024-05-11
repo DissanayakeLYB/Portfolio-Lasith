@@ -594,3 +594,7 @@ i{
 .project_code{
   font-size: medium;
 }
+
+.project_code:hover{
+  text-shadow: none;
+}
