@@ -1,15 +1,41 @@
-@ -1,103 +0,0 @@
+
 @media screen and (max-width: 1400px) {
+    .lasith{
+      font-size: 6vh;
+    }
     #profile {
       height: 100vh;
       margin-bottom: 6rem;
+      margin-top: -20vh;
     }
+    #projects{
+      margin-bottom: 25vh;
+    }
+    #contact{
+      margin-bottom: 5vh;
+    }
+
     .about-containers {
       flex-wrap: wrap;
     }
     #contact,
     #projects {
       height: fit-content;
+    }
+    .up-arrow {
+      position: absolute;
+      right: 100px;
+      top: 5rem;
+      font-size:x-large;
+      visibility: hidden;
+
+    }
+    .down-arrow {
+      position: absolute;
+      right: 100px;
+      top: 5rem;
+      font-size:x-large;
+      visibility: hidden;
     }
   }
   
