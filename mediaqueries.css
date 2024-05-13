@@ -52,6 +52,13 @@
       height:200px;
       margin: 0px auto 0px auto ;
     }
+
+    .section__pic-container_next img{
+      display: flex;
+      height: 70vh;
+      width: 40vw;
+    }
+
     #profile .section__text{
       margin-top:-50px;
     }
