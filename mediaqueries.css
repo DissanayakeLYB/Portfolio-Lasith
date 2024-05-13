@@ -53,11 +53,6 @@
       margin: 0px auto 0px auto ;
     }
 
-    .section__pic-container_next img{
-      display: flex;
-      height: 70vh;
-      width: 40vw;
-    }
 
     #profile .section__text{
       margin-top:-50px;
@@ -111,15 +106,27 @@
 
     #about{
       height:100vh;
+      margin-bottom: 40vh;
+      justify-content: center;
     }
 
-    #about h1{
-      margin-bottom:50px;
+    #about .section-container{
+      display:flex;
     }
 
     .section__pic-container_next {
       height: 30vh;
       width: 100vw;
+      margin: 0;
+    }
+
+    #about h1, #skills h1, #projects h1{
+      margin-bottom: 10vh;
+    }
+
+    .section__pic-container_next img{
+      height: 70vh;
+      width: 40vw;
       margin: auto 0;
     }
     
@@ -127,6 +134,10 @@
       border-radius: 2rem;
       height: 70vh;
       width: 20vw;
+    }
+
+    #skills{
+      margin-bottom: 20vh;
     }
   }
   
