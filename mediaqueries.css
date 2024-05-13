@@ -146,6 +146,12 @@
     footer {
       height: 30vh;
     }
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
     #profile {
       height: 80vh;
       margin-bottom: 0;
