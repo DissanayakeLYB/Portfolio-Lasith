@@ -42,8 +42,9 @@
   @media screen and (max-width: 1200px) {
 
     #profile {
-      height: 70vh;
+      height: 80vh;
       margin-bottom: 6rem;
+      margin-top: 3vh;
     }
     .section__pic-container img{
       border-radius:100%;
