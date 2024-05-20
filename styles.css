@@ -74,6 +74,11 @@ a:hover {
   text-shadow: 1px 1px 0px rgb(0, 0, 0);
 }
 
+.btn-container a:hover {
+  text-shadow: none;
+
+}
+
 .logo {
   font-size: 2rem;
 }
