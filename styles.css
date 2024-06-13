@@ -273,7 +273,7 @@ section {
 .btn-color-2 {
   border: rgb(53, 53, 53) 0.1rem solid;
   color: rgb(0, 0, 0);
-  box-shadow: 3px 3px black;
+  box-shadow: 3px 3px rgb(0, 0, 0);
   background-color: rgb(255, 255, 255, 0.6);
 }
 
@@ -469,8 +469,8 @@ article .icon {
   font-size: larger;
 }
 
-.contact-info-container p a:hover {
-  text-shadow: 0px 0px 3px rgb(255, 255, 255);
+.contact-info-container p a:hover{
+  text-shadow: 0px 0px 2px rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
@@ -480,6 +480,10 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+
+i {
+  color:white;
 }
 
 /* FOOTER SECTION */
@@ -496,104 +500,6 @@ footer p {
 #bottom{
   text-align: center;
   margin-bottom: 20px ;
-}
-
-.popup_up_1,
-.popup_up_2,
-.popup_up_3 {
-  display: None;
-  position: absolute;
-  top: 40px;
-  font-size: small;
-  background-color: #f9f9f93c;  
-  color: rgb(255, 255, 255);
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.popup_down_1,
-.popup_down_2,
-.popup_down_3 {
-  display: None;
-  font-size: small;
-  position: absolute;
-  background-color: #f9f9f93c;
-  color: rgb(255, 255, 255);
-  border: 1px solid #ccc;  
-  bottom: 40px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-i{
-  color: bisque;
-}
-
-
-
-.popup_up_1{
-  right: -13px;    
-}
-
-.popup_up_2{
-  right: -15px;
-}
-
-.popup_up_3{
-  right: -10px;
-}
-
-.popup_down_1{
-  right: -10px;
-}
-
-.popup_down_2{
-  right: -20px;
-}
-
-.popup_down_3{
-  right: -20px;
-}
-
-.up-arrow-1:hover .popup_up_1 {
-  display:block;
-}
-.up-arrow-2:hover .popup_up_2 {
-  display: block;
-}
-.up-arrow-3:hover .popup_up_3 {
-  display: block;
-}
-.down-arrow-1:hover .popup_down_1 {
-  display: block;
-}
-.down-arrow-2:hover .popup_down_2 {
-  display: block;
-}
-.down-arrow-3:hover .popup_down_3 {
-  display: block;
-}
-
-.up-arrow-1:hover{
-  scale:1.3;
-}
-.up-arrow-2:hover{
-  scale:1.3;
-}
-.up-arrow-3:hover{
-  scale:1.3;
-}
-.down-arrow-1:hover{
-  scale:1.3;
-}
-.down-arrow-2:hover{
-  scale:1.3;
-}
-.down-arrow-3:hover{
-  scale:1.3;
 }
 
 .project_code{
