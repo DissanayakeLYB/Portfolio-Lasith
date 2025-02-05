@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".navbar");
+    const heroSectionHeight = document.querySelector(".hero-section").offsetHeight;
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > window.innerHeight * 0.8) {
+        if (window.scrollY > heroSectionHeight - 60) {
             navbar.classList.add("scrolled");
         } else {
             navbar.classList.remove("scrolled");
@@ -24,6 +25,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             alert('Thanks for the feedback!');
             this.reset(); 
         }
-    });
-    alert('Thanks for the feedback!');
-    this.reset(); 
+    })
+    .catch(error => console.error('Error:', error)); // Optional error handling
+});

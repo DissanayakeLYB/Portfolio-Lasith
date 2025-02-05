@@ -1,8 +1,7 @@
 body {
     background-color: #000;
     color: #fff;
-    font-family: "Poppins", serif;
-    font-style: normal;
+    font-family: "Montserrat", serif;
     min-height: 100vh;
     overflow-x: hidden; 
 }
@@ -18,60 +17,64 @@ html {
 
 /* Navbar */
 .navbar {
-    padding: 1rem 5rem;
     position: fixed;
-    width: 100vw;
-    top:0;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 5rem;
     background: transparent;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: 1000;
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 1rem 5rem;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px); 
 }
 
-.navbar-toggler{
-    border-color: #ffffff;
-    background-color: #ffffff5c;
-    color: #ffffff00;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: black !important;
+    transition: color 0.4s ease;
 }
 
-.navbar-brand {
-    color: #0ff !important;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-link {
-    color: #fff !important;
-    margin: 0 1rem;
-    transition: color 0.3s ease;
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .nav-link {
+    color: white !important;
 }
 
 .nav-link:hover {
     color: #0ff !important;
 }
 
-.resume-btn {
-    background-color: #333;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+.navbar-toggler{
+    background-color: #ffffff;
 }
 
-.resume-btn:hover {
-    background-color: #0ff;
-    color: #000 !important;
+.navbar.scrolled .navbar-toggler{
+    filter: invert(1);
+    border-color: #000000;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    letter-spacing: 0.05em;
+}
+
+.nav-link {
+    color: #000000 ;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0ff ;
+    
 }
 
 /* Hero Section */
@@ -79,15 +82,18 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:end;
+    justify-content: end;
     min-height: 100vh;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     position: relative;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        to top, 
+        rgba(0, 0, 0, 1), 
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0)
     ), url('./Images/Profile/Lasith_bg.png');
     background-size: cover;
     background-position: center;
@@ -97,12 +103,15 @@ html {
     width: 100vw;
 }
 
+
 .main-title {
     font-size: 4rem;
-    font-weight: 400;
-    margin-bottom: 0rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
     position: relative;
     z-index: 2;
+    letter-spacing: 0.7rem;
+
 }
 
 .animated-text {
@@ -111,28 +120,20 @@ html {
 
 .subtitle {
     font-size: 1rem;
-    letter-spacing: 3px;
-    margin-bottom: 1rem;
-    color: #00ffff;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    color: #00ffffd3;
     position: relative;
     z-index: 2;
 }
 
 .resume-btn {
-    background-color: transparent;
-    border: 2px solid #0ff;
-    color: #0ff;
-    padding: 0.8rem 2rem;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 100px;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 2;
 }
 
 .resume-btn:hover {
-    background-color: #0ff;
     color: #000;
 }
 
@@ -194,87 +195,83 @@ section h2 {
     font-weight: 300;
 }
 
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-}
-
 /* Projects Section */
 .projects-section {
-    padding: 6rem 2rem;
+    padding: 60px 20px;
+    background-color: #000; 
+    color: #fff; 
+}
+
+.projects-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0ff; 
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-    scale: 0.9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
+    background-color: #111;
+    border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(300px - 20px);
+    max-width: 400px; 
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .project-image img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-bottom: 2px solid rgba(0, 255, 255, 0.1);
+    height: auto;
+    display: block;
 }
 
 .project-info {
-    padding: 2rem;
+    padding: 20px;
 }
 
 .project-info h3 {
-    color: #0ff;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
+    color: #0ff; 
 }
 
 .project-info p {
-    font-weight: 100;
-    letter-spacing: 0.06em;
+    font-size: 0.8rem;
+    color: #ddddddd0;
+    letter-spacing: 0.05em;
 }
 
 .project-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 15px;
 }
 
 .project-link {
-    flex: 1;
-    text-align: center;
-    padding: 0.8rem;
-    border: 2px solid #0ff;
-    border-radius: 100px;
-    color: #0ff;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0ff; 
+    color: #000; 
     text-decoration: none;
-    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .project-link:hover {
-    background: #0ff;
-    color: #000;
+    background-color: #00cccc; 
+    transform: scale(1.05); 
 }
+
+
 
 /* Blog Section */
 /* .blog-section {
@@ -470,9 +467,6 @@ section h2 {
     color: #fff;
 }
 
-
-
-
 /* Footer */
 .footer {
     padding: 1rem 10rem;
@@ -488,4 +482,3 @@ section h2 {
     align-items: center;
     justify-self: center;
 }
-

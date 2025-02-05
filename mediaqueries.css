@@ -1,26 +1,27 @@
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem;
+        padding: 4rem 1rem;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: center;
         background: rgba(0, 0, 0, 0);
-    }
-
-    .navbar.scrolled {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         padding: 0.8rem;
-
     }
 
     .navbar-toggler {
         background: transparent;
         border: none;
         font-size: 1.5rem;
-        color: #0ff;
+        color: #ffffff00;
+    }
+
+    .navbar.scrolled .navbar-toggler{
+        filter: invert(1);
+        border-color: #ffffff;
     }
 
     .hero-section {
@@ -40,42 +41,10 @@
         letter-spacing: 0.1em;
     }
 
-    .resume-btn {
-        padding: 0.5rem 1.5rem;
-        font-size: 1rem;
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .about-text {
-        font-size: 1rem;
-        line-height: 1.6;
-        padding: 0 1rem;
-    }
-
-    .skills-grid, .projects-grid, .blog-posts {
+    .skills-grid, .blog-posts {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 1rem;
         padding: 2rem 1rem;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .project-card {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .project-info {
-        padding: 1rem;
-    }
-
-    .project-links {
-        flex-direction: column;
     }
 
     .contact-container {
@@ -118,7 +87,7 @@
         font-size: 0.9rem;
     }
 
-    .skills-grid, .projects-grid, .blog-posts {
+    .skills-grid, .blog-posts {
         grid-template-columns: 1fr;
     }
 
