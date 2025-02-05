@@ -9,3 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const formData = new FormData(this);
+
+    fetch(this.action, {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Thanks for the feedback!');
+            this.reset(); 
+        }
+    });
+    alert('Thanks for the feedback!');
+    this.reset(); 
