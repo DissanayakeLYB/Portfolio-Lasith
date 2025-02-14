@@ -24,6 +24,10 @@
         border-color: #ffffff;
     }
 
+    .nav-link:hover {
+        color: #0ff ; 
+    }
+
     .hero-section {
         min-height: 120vh;
         padding: 1rem 1rem;
@@ -97,6 +101,10 @@
         margin: 0;
         padding: 0;
         width: 100vw;
+    }
+    
+    .nav-link:hover {
+        color: #0ff ; 
     }
 
 

@@ -74,8 +74,7 @@ html {
 }
 
 .nav-link:hover {
-    color: #0ff ;
-    
+    color: #0ff ; 
 }
 
 /* Hero Section */
@@ -391,7 +390,7 @@ section h2 {
 .skill-card:hover {
     transform: translateY(-5px);
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.807);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 
