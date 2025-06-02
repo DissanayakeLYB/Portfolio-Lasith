@@ -68,7 +68,7 @@
             <h1 class="main-title">
                 <span class="animated-text">Lasith Dissanayake</span>
             </h1>
-            <p class="subtitle">  Web  Developer | Machine Learning Enthusiast </p>
+            <p class="subtitle">freelance  Web  Developer | Machine Learning Enthusiast </p>
             <br>
         </section>
     </main>
@@ -79,7 +79,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>I'm a passionate developer with a keen eye for creating beautiful, responsive web experiences and building functional AI-powered solutions. With hands-on experience as a freelance developer, I specialize in crafting intuitive user interfaces using modern frontend technologies, while also exploring the power of machine learning to create smarter, more dynamic applications. Blending clean code with innovative design and data-driven thinking, I bridge the gap between frontend finesse and intelligent functionality.</p>
+                    <p>I'm a developer with a keen eye for creating <span class="highlight">ATTRACTIVE</span>, <span class="highlight">RESPONSIVE</span> web experiences and building <span class="highlight">FUNCTIONAL AI-POWERED</span> solutions. With hands-on experience as a <span class="highlight">FREELANCE DEVELOPER</span>, I specialize in crafting intuitive user interfaces using modern frontend technologies, while also exploring the power of <span class="highlight">MACHINE LEARNING</span> to create smarter, more dynamic applications. Blending <span class="highlight">CLEAN CODE</span> with <span class="highlight">INNOVATIVE DESIGN</span> and <span class="highlight">DATA-DRIVEN</span> thinking, I bridge the gap between frontend finesse and intelligent functionality.</p>
                 </div>
             </div>
         </div>
@@ -89,31 +89,110 @@
     <section id="projects" class="section projects-section">
       <div class="section-content">
           <h2 class="section-title">Projects</h2>
+          
+          <!-- Project Filters -->
+          <div class="project-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+              <button class="filter-btn" data-filter="web">Web Development</button>
+          </div>
+
+          <!-- Projects Grid -->
           <div class="projects-grid">
-            <div class="project-card">
-              <div class="project-image">
-                  <img src="./Images/project-images/04_AutoScroller/AutoScroller.png" alt="AutoScroller Project" />
-              </div>
-              <div class="project-info">
-                  <h3>AutoScroller</h3>
-                  <p>Detecting Eye Movement and scrolling up and down automatically.</p>
-                  <div class="project-links">
-                      <a href="https://github.com/DissanayakeLYB/AutoScroller" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+              <div class="project-card" data-category="ai-ml">
+                  <div class="project-image">
+                      <img src="./Images/project-images/03_AgentArticle/01.png" alt="AgentArticle Project" />
+                      <div class="project-overlay">
+                          <div class="project-tags">
+                              <span class="tag">Python</span>
+                              <span class="tag">Streamlit</span>
+                              <span class="tag">Selenium</span>
+                              <span class="tag">GroqAPI</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-info">
+                      <h3>AgentArticle</h3>
+                      <p>Automatically writes articles on a given topic and rephrases it until the AI content detected is less than 10%.</p>
+                      <div class="project-links">
+                          <a href="https://github.com/DissanayakeLYB/Agentic-Articles" class="project-link" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-github"></i> GitHub
+                          </a>
+                          <button class="view-details-btn" data-project="agentarticle">View Details</button>
+                      </div>
                   </div>
               </div>
-            </div>
-            <div class="project-card">
-              <div class="project-image">
-                  <img src="./Images/project-images/03_AgentArticle/01.png" alt="AgentArticle Project" />
+
+              <div class="project-card" data-category="web">
+                  <div class="project-image">
+                      <img src="./Images/project-images/05_MCD/MCD.png" alt="MSE Careers Day Website" />
+                      <div class="project-overlay">
+                          <div class="project-tags">
+                              <span class="tag">Next.js</span>
+                              <span class="tag">Tailwind CSS</span>
+                              <span class="tag">Motiff-UI</span>
+                              <span class="tag">Vercel</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-info">
+                      <h3>MSE Careers Day Website</h3>
+                      <p>The official website for the MSE Careers Day 2025. The website was built using Next.js, Tailwind CSS, and the UI was generated using Motiff.</p>
+                      <div class="project-links">
+                          <a href="https://www.careersday-mse.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                              View Website
+                          </a>
+                      </div>
+                  </div>
               </div>
-              <div class="project-info">
-                <h3>AgentArticle</h3>
-                <p>Automatically writes articles on a given topic and rephrases it until the AI content detected is less than 10%.</p>
-                <div class="project-links">
-                    <a href="https://github.com/DissanayakeLYB/AgentArticle" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
+
+              <div class="project-card" data-category="ai-ml">
+                  <div class="project-image">
+                      <img src="./Images/project-images/06_chatpdf_wrapper/ChatPDF_wrapper.png" alt="chatpdf_wrapper Project" />
+                      <div class="project-overlay">
+                          <div class="project-tags">
+                              <span class="tag">JS</span>
+                              <span class="tag">ChatPDF-API</span>
+                              <span class="tag">Netlify</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-info">
+                      <h3>ChatPDF Wrapper</h3>
+                      <p>A wrapper for the ChatPDF API to chat with PDF files upto 5000 pages for 500 messages.</p>
+                      <div class="project-links">
+                          <a href="https://github.com/DissanayakeLYB/AutoScroller" class="project-link" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-github"></i> GitHub
+                          </a>
+                          <a href="https://chatpdf-wrapper.netlify.app/" target="_blank" class="view-details-btn">Visit Website</a>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="project-card" data-category="ai-ml">
+                  <div class="project-image">
+                      <img src="./Images/project-images/04_AutoScroller/AutoScroller.png" alt="AutoScroller Project" />
+                      <div class="project-overlay">
+                          <div class="project-tags">
+                              <span class="tag">Python</span>
+                              <span class="tag">OpenCV</span>
+                              <span class="tag">MediaPipe</span>
+                              <span class="tag">Numpy</span>
+                              <span class="tag">PyAutoGUI</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-info">
+                      <h3>AutoScroller</h3>
+                      <p>Detecting Eye Movement and scrolling up and down automatically.</p>
+                      <div class="project-links">
+                          <a href="https://github.com/DissanayakeLYB/AutoScroller" class="project-link" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-github"></i> GitHub
+                          </a>
+                          <button class="view-details-btn" data-project="autoscroller">View Details</button>
+                      </div>
+                  </div>
+              </div>
           </div>
       </div>
     </section>
@@ -161,54 +240,91 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-          <div class="skill-card ">
-            <img src="./Images/skills/html.png" alt="html logo"></img>
-              <span class="tooltip">HTML</span>
-          </div>
-          <div class="skill-card">
-            <img src="./Images/skills/css.png" alt="css logo"></img>
-              <span class="tooltip">CSS</span>
-          </div>
-          <div class="skill-card ">
-            <img src="./Images/skills/javascript.png" alt="javascript logo"></img>
-              <span class="tooltip">JavaScript</span>
-          </div>
-          <div class="skill-card ">
-            <img src="./Images/skills/react.png" alt="react logo"></img>
-              <span class="tooltip">React</span>
-          </div>
-          <div class="skill-card ">
-            <img src="./Images/skills/git.png" alt="git logo"></img>
-              <span class="tooltip">Git</span>
-          </div>
-          <div class="skill-card ">
-            <img style="filter: invert(1);" src="./Images/skills/github.png" alt="github logo"></img>
-              <span class="tooltip">GitHub</span>
-          </div>
-          <div class="skill-card ">
-            <img src="./Images/skills/bootstrap.png" alt="bootstrap logo"></img>
-              <span class="tooltip">Bootstrap</span>
-          </div>
-          <div class="skill-card ">
-            <img src="./Images/skills/python.png" alt="python logo"></img>
-              <span class="tooltip">Python</span>
-          </div>
-          <div class="skill-card ">
-              <img src="./Images/skills/postgresql.png" alt="postgresql logo"></img>
-              <span class="tooltip">SQL</span>
-          </div>
-          <div class="skill-card ">
-            <img src="./Images/skills/figma.png" alt="figma logo"></img>
-              <span class="tooltip">Figma</span>
-          </div>
-          <div class="skill-card ">
-              <img src="./Images/skills/blender.png" alt="blender logo"></img>
-              <span class="tooltip">Blender</span>
-          </div>
+        <h2>Skills</h2>
+
+        <div class="skills-categories-container">
+        
+        <!-- Frontend Development -->
+        <div class="skills-category">
+            <h3 class="category-title">Frontend Development</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="./Images/skills/html.png" alt="html logo">
+                    <span class="tooltip">HTML</span>
+                </div>
+                <div class="skill-card">
+                    <img src="./Images/skills/css.png" alt="css logo">
+                    <span class="tooltip">CSS</span>
+                </div>
+                <div class="skill-card">
+                    <img src="./Images/skills/javascript.png" alt="javascript logo">
+                    <span class="tooltip">JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <img src="./Images/skills/react.png" alt="react logo">
+                    <span class="tooltip">React</span>
+                </div>
+                <div class="skill-card">
+                    <img src="./Images/skills/bootstrap.png" alt="bootstrap logo">
+                    <span class="tooltip">Bootstrap</span>
+                </div>
+                <div class="skill-card">
+                    <img src="./Images/skills/tailwind-css.png" alt="tailwind css logo">
+                    <span class="tooltip">Tailwind CSS</span>
+                </div>
+                <div class="skill-card">
+                    <img style="filter: invert(1);" src="./Images/skills/nextjs.png" alt="nextjs logo">
+                    <span class="tooltip">Next.js</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="skills-category">
+            <h3 class="category-title">Machine Learning</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="./Images/skills/python.png" alt="python logo">
+                    <span class="tooltip">Python</span>
+                </div>
+                <div class="skill-card">
+                    <img src="./Images/skills/postgresql.png" alt="postgresql logo">
+                    <span class="tooltip">SQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Version Control -->
+        <div class="skills-category">
+            <h3 class="category-title">Version Control </h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="./Images/skills/git.png" alt="git logo">
+                    <span class="tooltip">Git</span>
+                </div>
+                <div class="skill-card">
+                    <img style="filter: invert(1);" src="./Images/skills/github.png" alt="github logo">
+                    <span class="tooltip">GitHub</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="skills-category">
+            <h3 class="category-title">Design</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="./Images/skills/figma.png" alt="figma logo">
+                    <span class="tooltip">Figma</span>
+                </div>
+                <div class="skill-card">
+                    <img src="./Images/skills/blender.png" alt="blender logo">
+                    <span class="tooltip">Blender</span>
+                </div>
+            </div>
+        </div>
       </div>
-  </section>
+    </section>
 
 
     <!-- Contact Section -->
@@ -241,6 +357,16 @@
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- Project Details Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
