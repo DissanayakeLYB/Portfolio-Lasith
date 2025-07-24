@@ -97,13 +97,17 @@ body .navbar-toggler {
     --border-color: #e5e7eb;
     --border-dark: #374151;
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
     --border-radius: 8px;
     --border-radius-lg: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        sans-serif;
 }
 
 html {
@@ -132,7 +136,7 @@ body .navbar-brand:hover,
 
 body .nav-link::after,
 .nav-link::after {
-    content: '' !important;
+    content: "" !important;
     position: absolute !important;
     bottom: 0 !important;
     left: 0 !important;
@@ -246,12 +250,12 @@ body .navbar-toggler-icon,
     .navbar .container {
         padding: 0 1rem !important;
     }
-    
+
     body .navbar-nav,
     .navbar-nav {
         padding: 0.5rem 0 !important;
     }
-    
+
     body .nav-link,
     .nav-link {
         padding: 0.75rem 1rem !important;
@@ -263,48 +267,64 @@ body .navbar-toggler-icon,
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: 
-        linear-gradient(180deg, 
-            rgba(147, 197, 253, 0.3) 0%, 
-            rgba(196, 181, 253, 0.25) 20%, 
-            rgba(167, 243, 208, 0.2) 40%, 
-            rgba(251, 207, 232, 0.15) 60%, 
-            rgba(255, 255, 255, 0.8) 80%, 
-            rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(147, 197, 253, 0.3) 0%,
+        rgba(196, 181, 253, 0.25) 20%,
+        rgba(167, 243, 208, 0.2) 40%,
+        rgba(251, 207, 232, 0.15) 60%,
+        rgba(255, 255, 255, 0.8) 80%,
+        rgba(255, 255, 255, 1) 100%
+    );
     position: relative;
     overflow: hidden;
     padding-top: 80px;
 }
 
 .hero-section::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
-        radial-gradient(circle at 90% 10%, rgba(147, 197, 253, 0.15) 0%, rgba(147, 197, 253, 0.03) 35%, transparent 70%),
-        radial-gradient(circle at 10% 90%, rgba(196, 181, 253, 0.15) 0%, rgba(196, 181, 253, 0.03) 35%, transparent 70%),
-        radial-gradient(circle at 50% 50%, rgba(167, 243, 208, 0.08) 0%, rgba(167, 243, 208, 0.01) 40%, transparent 80%);
+    background: radial-gradient(
+            circle at 90% 10%,
+            rgba(147, 197, 253, 0.15) 0%,
+            rgba(147, 197, 253, 0.03) 35%,
+            transparent 70%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(196, 181, 253, 0.15) 0%,
+            rgba(196, 181, 253, 0.03) 35%,
+            transparent 70%
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(167, 243, 208, 0.08) 0%,
+            rgba(167, 243, 208, 0.01) 40%,
+            transparent 80%
+        );
     z-index: 1;
     animation: gradientShift 20s ease-in-out infinite;
 }
 
 .hero-section::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('./Images/Profile/Lasith_bg.png') center/cover;
+    background: url("./Images/Profile/Lasith_bg.png") center/cover;
     opacity: 0.02;
     z-index: 1;
 }
 
 @keyframes gradientShift {
-    0%, 100% {
+    0%,
+    100% {
         transform: translate(0, 0) scale(1);
     }
     25% {
@@ -321,7 +341,7 @@ body .navbar-toggler-icon,
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 2rem;
     text-align: center;
@@ -335,7 +355,7 @@ body .navbar-toggler-icon,
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin: 0 0.5rem 2rem 0;
     animation: fadeInUp 0.6s ease-out;
     box-shadow: var(--shadow-md);
     letter-spacing: 0.05em;
@@ -345,10 +365,10 @@ body .navbar-toggler-icon,
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 800;
     color: var(--text-primary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     line-height: 1.1;
     animation: fadeInUp 0.6s ease-out 0.2s both;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
     word-wrap: break-word;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
@@ -359,7 +379,7 @@ body .navbar-toggler-icon,
     font-size: clamp(1.125rem, 2.5vw, 1.375rem);
     color: var(--text-secondary);
     margin-bottom: 3rem;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     animation: fadeInUp 0.6s ease-out 0.4s both;
@@ -548,7 +568,7 @@ section {
 }
 
 .skill-category h4::before {
-    content: '';
+    content: "";
     width: 4px;
     height: 20px;
     background: var(--primary-color);
@@ -575,7 +595,6 @@ section {
 .skill-item:hover {
     background: rgba(59, 130, 246, 0.1); /* Reduced contrast blue */
     color: var(--primary-color);
-    transform: translateY(-2px);
     box-shadow: var(--shadow-sm);
 }
 
@@ -586,8 +605,9 @@ section {
     transition: var(--transition);
 }
 
-.skill-item:hover img {
-    transform: scale(1.1);
+.skill-item span {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
 }
 
 /* ===== PROJECTS SECTION ===== */
@@ -928,35 +948,35 @@ section {
     .navbar-nav {
         display: none;
     }
-    
+
     .navbar-toggler {
         display: block;
     }
-    
+
     .hero-cta-group {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .about-content {
         max-width: 100%;
         text-align: center;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-container {
         margin: 0 1rem;
         padding: 2rem;
     }
-    
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
@@ -966,21 +986,21 @@ section {
     .container {
         padding: 0 1rem;
     }
-    
+
     .hero-content {
         padding: 0 1rem;
     }
-    
+
     .projects-filters {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .filter-btn {
         width: 100%;
         max-width: 200px;
     }
-    
+
     .hero-tech-stack {
         justify-content: center;
     }
