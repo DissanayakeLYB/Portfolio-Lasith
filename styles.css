@@ -448,18 +448,19 @@ body .navbar-toggler-icon,
 .tech-tag {
     background: rgba(59, 130, 246, 0.1);
     color: var(--primary-color);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 0.875rem;
+    padding: 0.4rem 1rem;
+    border-radius: 25px; /* More oval/pill shape */
+    font-size: 0.8rem;
     font-weight: 500;
     border: 1px solid rgba(59, 130, 246, 0.2);
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .tech-tag:hover {
-    background: var(--primary-color);
-    color: white;
+    background: rgba(59, 130, 246, 0.15);
     transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
 }
 
 /* ===== SECTIONS ===== */
@@ -648,6 +649,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    align-items: stretch;
 }
 
 .project-card {
@@ -656,9 +658,9 @@ section {
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     transition: var(--transition);
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -671,6 +673,7 @@ section {
     position: relative;
     overflow: hidden;
     aspect-ratio: 16/9;
+    flex-shrink: 0;
 }
 
 .project-image img {
@@ -684,11 +687,16 @@ section {
     transform: scale(1.05);
 }
 
-.project-content {
-    padding: 1.5rem;
-    flex: 1;
+.project-body {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.project-content-section {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    flex: 1;
 }
 
 .project-title {
@@ -700,31 +708,39 @@ section {
 
 .project-description {
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Reduced gap between content and tags */
     line-height: 1.6;
-    flex: 1;
 }
 
 .project-tags {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 1.5rem;
     flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
 .project-tag {
     background: rgba(59, 130, 246, 0.1);
     color: var(--primary-color);
-    padding: 0.25rem 0.75rem;
-    border-radius: 50px;
-    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+    border-radius: 25px; /* More oval/pill shape */
+    font-size: 0.8rem;
     font-weight: 500;
     border: 1px solid rgba(59, 130, 246, 0.2);
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.project-tag:hover {
+    background: rgba(59, 130, 246, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
 }
 
 .project-links {
     display: flex;
     gap: 1rem;
+    padding: 1.5rem;
     margin-top: auto;
 }
 
