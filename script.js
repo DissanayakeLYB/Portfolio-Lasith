@@ -2,32 +2,11 @@
 const navbar = document.getElementById("navbar");
 const navbarToggler = document.getElementById("navbar-toggler");
 const navbarNav = document.querySelector(".navbar-nav");
-const refreshBtn = document.getElementById("refresh-btn");
 
 // Update current year in footer
 const currentYearElement = document.getElementById("current-year");
 if (currentYearElement) {
     currentYearElement.textContent = new Date().getFullYear();
-}
-
-// Refresh functionality for navbar brand
-if (refreshBtn) {
-    refreshBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-
-        // Add a subtle animation before refresh
-        refreshBtn.style.transform = "scale(0.95)";
-        refreshBtn.style.transition = "transform 0.1s ease";
-
-        setTimeout(() => {
-            refreshBtn.style.transform = "scale(1)";
-        }, 100);
-
-        // Refresh the page after a short delay
-        setTimeout(() => {
-            window.location.reload();
-        }, 200);
-    });
 }
 
 // Navbar scroll effect
