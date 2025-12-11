@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://lasithdissanayake.com/</loc>
+        <lastmod>2025-12-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://lasithdissanayake.com/Images/Profile/Lasith_small.jpg</image:loc>
+            <image:title>Lasith Dissanayake - Fullstack Developer</image:title>
+        </image:image>
+    </url>
+    
+    <!-- About Section -->
+    <url>
+        <loc>https://lasithdissanayake.com/#about</loc>
+        <lastmod>2025-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Skills Section -->
+    <url>
+        <loc>https://lasithdissanayake.com/#skills</loc>
+        <lastmod>2025-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Projects Section -->
+    <url>
+        <loc>https://lasithdissanayake.com/#projects</loc>
+        <lastmod>2025-12-11</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://lasithdissanayake.com/Images/project-images/04_AutoScroller/AutoScroller.png</image:loc>
+            <image:title>AutoScroller Project</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://lasithdissanayake.com/Images/project-images/05_MCD/MCD.png</image:loc>
+            <image:title>MSE Careers Day</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://lasithdissanayake.com/Images/project-images/08_PsychDevs/HeroSection.png</image:loc>
+            <image:title>PsychDevs</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://lasithdissanayake.com/Images/project-images/07_DevLinker/DevLinker.png</image:loc>
+            <image:title>DevLinker</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://lasithdissanayake.com/Images/project-images/06_chatpdf_wrapper/ChatPDF_wrapper.png</image:loc>
+            <image:title>ChatPDF Wrapper</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://lasithdissanayake.com/Images/project-images/09_CMIPD/HeroSection.png</image:loc>
+            <image:title>CMIPD</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Contact Section -->
+    <url>
+        <loc>https://lasithdissanayake.com/#contact</loc>
+        <lastmod>2025-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Resume PDF -->
+    <url>
+        <loc>https://lasithdissanayake.com/resources/Lasith_Dissanayake_resume.pdf</loc>
+        <lastmod>2025-12-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset>

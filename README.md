@@ -1,3 +1,7 @@
-# Portfolio Website
+# Portfolio Website - Lasith Dissanayake
 
-Portfolio Website sharing my skills, projects and experiences harnessed throughout my journey of endless learning, taken to a single point.
+Professional portfolio website showcasing my skills, projects, and experiences as a Fullstack Developer specializing in React, Next.js, and Node.js.
+
+## 🌐 Live Website
+
+Visit: [lasithdissanayake.com](https://lasithdissanayake.com)

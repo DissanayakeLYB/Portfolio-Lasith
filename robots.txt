@@ -1,0 +1,40 @@
+# robots.txt for lasithdissanayake.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lasithdissanayake.com/sitemap.xml
+
+# Crawl-delay (optional - adjust if needed)
+Crawl-delay: 1
+
+# Disallow specific directories if any
+# Disallow: /private/
+# Disallow: /temp/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
