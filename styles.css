@@ -572,8 +572,8 @@ section {
 }
 
 .skill-item svg {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   stroke: rgba(0, 0, 0, 0.2);
   stroke-width: 1px;
