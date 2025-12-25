@@ -4,4 +4,4 @@ Professional portfolio website showcasing my skills, projects, and experiences a
 
 ## 🌐 Live Website
 
-Visit: [lasithdissanayake.com](https://lasithdissanayake.com)
+Visit: [lasith.site](https://lasith.site)
