@@ -58,7 +58,6 @@ body .navbar-nav li {
 
 .nav-link,
 body .nav-link {
-  color: var(--text-secondary) !important;
   text-decoration: none !important;
   font-weight: 500 !important;
   transition: var(--transition) !important;
@@ -72,7 +71,6 @@ body .nav-link {
 body .navbar-brand {
   font-size: 1.5rem !important;
   font-weight: 700 !important;
-  color: var(--text-primary) !important;
   text-decoration: none !important;
   transition: var(--transition) !important;
   display: block !important;
@@ -91,6 +89,7 @@ body .navbar-toggler {
   --hover-color: #60a5fa25;
   --text-primary: #f9fafb;
   --text-secondary: #d1d5db;
+  --text-tertiary: #000;
   --text-light: #9ca3af;
   --bg-primary: #000000;
   --bg-secondary: #1e293b;
@@ -124,18 +123,24 @@ body {
   overflow-x: hidden;
 }
 
+body .nav-link,
+.navbar-brand {
+  color: var(--text-tertiary);
+}
+
 body .navbar.scrolled,
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.98) !important;
+  color: var(--text-secondary) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
   border-bottom: 1px solid var(--border-color) !important;
   box-shadow: var(--shadow-md) !important;
 }
 
-body .navbar-brand:hover,
-.navbar-brand:hover {
-  color: var(--primary-color) !important;
+body .navbar.scrolled .navbar-brand,
+.navbar.scrolled .navbar-brand {
+  color: var(--text-tertiary) !important;
 }
 
 body .nav-link::after,
@@ -153,6 +158,11 @@ body .nav-link::after,
 body .nav-link:hover,
 .nav-link:hover {
   color: var(--text-primary) !important;
+}
+
+body .navbar-brand:hover,
+.navbar-brand:hover {
+  color: var(--text-secondary) !important;
 }
 
 body .nav-link:hover::after,
@@ -268,7 +278,7 @@ body .navbar-toggler-icon,
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-  min-height: 100vh;
+  min-height: 105vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -347,7 +357,7 @@ body .navbar-toggler-icon,
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
   color: #00d9ff;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   line-height: 1.1;
   letter-spacing: 0.1em;
 }
@@ -355,10 +365,10 @@ body .navbar-toggler-icon,
 .hero-subtitle {
   font-size: clamp(0.875rem, 2vw, 1.2rem);
   color: #00d9ff;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.8;
+  /* line-height: 1.8; */
   letter-spacing: 0.48em;
   text-transform: uppercase;
 }

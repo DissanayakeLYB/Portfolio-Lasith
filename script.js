@@ -5,7 +5,7 @@ const navbarNav = document.querySelector(".navbar-nav");
 
 // Navbar scroll effect
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
+  if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
