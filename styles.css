@@ -483,12 +483,12 @@ section {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 2rem;
   align-items: center;
 }
 
 .about-content {
-  max-width: 500px; /* Fixed width for description section */
+  max-width: 700px; /* Fixed width for description section */
 }
 
 .about-content h3 {
